@@ -123,3 +123,25 @@ define('USER_ROLE_HANDLER',         3); // Can view, assign, and resolve tickets
 */
 define('USER_STATUS_ACTIVE',        1); // User account is active and can log in
 define('USER_STATUS_INACTIVE',      2); // User account is inactive and cannot log in
+
+/*
+|--------------------------------------------------------------------------
+| DEPARTMENTS CONSTANTS
+|--------------------------------------------------------------------------
+|
+| Defines the possible states of a Departments
+|
+*/
+define('DEPT_IT_SUPPORT', 1);                       // IT Support
+define('DEPT_NETWORK_SERVICES', 2);                 // Network Services
+define('DEPT_INFORMATION_SECURITY', 3);             // Information Security
+define('DEPT_HUMAN_RESOURCES', 4);                  // Human Resources
+define('DEPT_FINANCE', 5);                          // Finance
+define('DEPT_ADMINISTRATION', 6);                   // Administration
+define('DEPT_FACILITIES_MAINTENANCE', 7);           // Facilities Maintenance
+define('DEPT_PROCUREMENT', 8);                      // Procurement
+define('DEPT_MARKETING', 9);                        // Marketing
+define('DEPT_SOFTWARE_DEVELOPMENT', 10);            // Software Development
+define('DEPT_TRAINING_AND_DEVELOPMENT', 11);        // Training and Development
+define('DEPT_CUSTOMER_SUPPORT', 12);                // Customer Support
+define('DEPT_LEGAL_AND_COMPLIANCE', 13);            // Legal and Compliance
