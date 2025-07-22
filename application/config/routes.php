@@ -49,8 +49,25 @@ defined("BASEPATH") or exit("No direct script access allowed");
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route["default_controller"] = "UserController";
+$route["default_controller"] = "AuthController";
 $route["404_override"] = "";
 $route["translate_uri_dashes"] = false;
 
-$route["index"] = "UserController/index";
+// authentication routes
+$route["auth/login"] = "AuthController/login";
+$route["auth/register"] = "AuthController/register";
+
+// Admin Routes
+$route["admin/dashboard"] = "AdminController/dashboard";
+$route["admin/categories"] = "AdminController/categories";
+$route["admin/map_handlers"] = "AdminController/map_hadlers";
+$route["admin/register_user"] = "AdminController/registser_user";
+
+// Employee Routes
+$route["employee/dashboard"] = "EmployeeController/dashboard";
+$route["employee/file_complaint"] = "EmployeeController/file_complaint";
+$route["employee/track_complaints"] = "EmployeeController/track_complaints";
+
+// Handler Routes
+$route["handler/dashboard"] = "HandlerController/dashboard";
+$route["handler/resolve_complaints"] = "HandlerController/resolve_complaints";
