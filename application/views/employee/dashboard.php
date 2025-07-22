@@ -1,2 +1,3 @@
-<h1>dashboard employee</h1>
-<p>Welcome to the employee dashboard!</p>
+<?php $this->load->view('templates/header'); ?>
+
+<?php $this->load->view('templates/footer'); ?>
