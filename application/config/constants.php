@@ -84,19 +84,42 @@ defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
-// ticket constants
-define('TICKET_STATUS_OPEN',      1);
-define('TICKET_STATUS_ASSIGNED',  2);
+/*
+|--------------------------------------------------------------------------
+| TICKET STATUS CONSTANTS
+|--------------------------------------------------------------------------
+|
+| Defines the possible states a ticket can be in within the system.
+|
+*/
+define('TICKET_STATUS_OPEN',        1);
+define('TICKET_STATUS_ASSIGNED',    2);
 define('TICKET_STATUS_IN_PROGRESS', 3);
-define('TICKET_STATUS_RESOLVED',  4);
-define('TICKET_STATUS_CLOSED',    5);
-define('TICKET_STATUS_PENDING',   6);
+define('TICKET_STATUS_PENDING',     4);
+define('TICKET_STATUS_RESOLVED',    5);
+define('TICKET_STATUS_CLOSED',      6);
+define('TICKET_STATUS_REOPENED',    7); 
+define('TICKET_STATUS_CANCELLED',   8);
 
-// user roles constants
-define('USER_ROLE_ADMIN',         1);
-define('USER_ROLE_EMPLOYEE',         2);
-define('USER_ROLE_HANDLER',      3);
+/*
+|--------------------------------------------------------------------------
+| USER ROLES CONSTANTS
+|--------------------------------------------------------------------------
+|
+| Defines the different roles users can have in the system.
+|
+*/
+define('USER_ROLE_ADMIN',           1); // Full administrative access
+define('USER_ROLE_EMPLOYEE',        2); // Standard user, can submit tickets
+define('USER_ROLE_HANDLER',         3); // Can view, assign, and resolve tickets
 
-// user status constants
-define('USER_STATUS_ACTIVE',      1);
-define('USER_STATUS_INACTIVE',    2);
+/*
+|--------------------------------------------------------------------------
+| USER STATUS CONSTANTS
+|--------------------------------------------------------------------------
+|
+| Defines the possible states of a user account.
+|
+*/
+define('USER_STATUS_ACTIVE',        1); // User account is active and can log in
+define('USER_STATUS_INACTIVE',      2); // User account is inactive and cannot log in
