@@ -84,3 +84,19 @@ defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
+// ticket constants
+define('TICKET_STATUS_OPEN',      1);
+define('TICKET_STATUS_ASSIGNED',  2);
+define('TICKET_STATUS_IN_PROGRESS', 3);
+define('TICKET_STATUS_RESOLVED',  4);
+define('TICKET_STATUS_CLOSED',    5);
+define('TICKET_STATUS_PENDING',   6);
+
+// user roles constants
+define('USER_ROLE_ADMIN',         1);
+define('USER_ROLE_EMPLOYEE',         2);
+define('USER_ROLE_HANDLER',      3);
+
+// user status constants
+define('USER_STATUS_ACTIVE',      1);
+define('USER_STATUS_INACTIVE',    2);
